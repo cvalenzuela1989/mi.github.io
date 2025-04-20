@@ -1,0 +1,161 @@
+---
+import { Hero } from "@blocks/Hero";
+import Layout from "../layouts/Layout.astro";
+import { Logos } from "@blocks/Logos";
+import { Service } from "@blocks/Service";
+import { Stats } from "@blocks/Stats";
+import { Newsletter } from "@blocks/Newsletter";
+import { Testimonials } from "@blocks/Testimonials";
+import { ImageContent } from "@blocks/ImageContent";
+---
+
+<Layout title="InsideMedia" description="YOUR META DESCRIPTION FOR SEO">
+    <main class="page-content">
+        <Hero
+            heroType="contentImage"
+            data={{
+                label: `Become a partner `,
+                logo: "logo",
+                title: `Services for your company`,
+                description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.`,
+                image: "heroImg",
+                button: {
+                    text: "see services",
+                    link: "/docs",
+                    variant: "primary",
+                },
+            }}
+        />
+        <Logos
+            data={{
+                title: "Trusted by the world's best companies",
+                logos: ["logo1", "logo2", "logo3", "logo4"],
+            }}
+        />
+
+        <Service
+            data={{
+                aboveTitle: "Our Services",
+                title: "We offer a wide range of services",
+                description:
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+                services: [
+                    {
+                        title: "Service 1",
+                        description:
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        icon: "cloud",
+                    },
+                    {
+                        title: "Service 2",
+                        description:
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        icon: "lock",
+                    },
+                    {
+                        title: "Service 3",
+                        description:
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        icon: "repeat",
+                    },
+                    {
+                        title: "Service 4",
+                        description:
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        icon: "fingerprint",
+                    },
+                ],
+            }}
+        />
+
+        <Stats
+            data={{
+                title: "There are many variations of passages of Lorem Ipsum available.",
+                description:
+                    "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. It uses utility classes for typography and spacing to space content out within the larger container.",
+                stats: [
+                    {
+                        title: "33k",
+                        variant: "white",
+                        description:
+                            "<b>Lorem Ipsum is simply dummy text</b> of the printing and typesetting industry.",
+                    },
+                    {
+                        title: "€1.5 millions",
+                        variant: "black",
+                        description:
+                            "<b>Lorem Ipsum is simply dummy text</b> of the printing and typesetting industry.",
+                    },
+                    {
+                        title: "100.000",
+                        variant: "blue",
+                        description:
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    },
+                ],
+            }}
+        />
+
+        <ImageContent
+            data={{
+                aboveTitle: "About Us",
+                description:
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+                image: "heroImg",
+                title: "We are a team of professionals",
+                imagePosition: "right",
+            }}
+        />
+
+        <ImageContent
+            data={{
+                aboveTitle: "Become a partner",
+                description:
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+                image: "heroImg",
+                title: "Being a partner is easy!",
+                imagePosition: "left",
+            }}
+        />
+
+        <Testimonials
+            data={{
+                aboveTitle: "Testimonials",
+                title: "What our customers say",
+                description:
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+                authors: [
+                    {
+                        authorName: "John Doe",
+                        authorRole: "CEO",
+                        content:
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    },
+                    {
+                        authorName: "Jane Doe",
+                        authorRole: "CEO",
+                        content:
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    },
+                    {
+                        authorName: "John Doe",
+                        authorRole: "CEO",
+                        content:
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    },
+                ],
+            }}
+        />
+
+        <Newsletter
+            data={{
+                button: {
+                    label: "Subscribe",
+                    link: "/",
+                },
+                title: "Subscribe to our newsletter to get the latest news!",
+                label: "& more exclusive content, like codes and discounts!",
+            }}
+        />
+    </main>
+</Layout>
